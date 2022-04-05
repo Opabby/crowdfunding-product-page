@@ -1,6 +1,6 @@
 .conteudo{
     padding-top: 15rem;
-    background-color: rgb(247, 245, 245);
+    background-color: var(--light-gray);
 }
 
 .data {
@@ -8,14 +8,120 @@
     margin: 0 2rem;
     background-color: var(--white);
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data__backed {
+
+}
+
+.data__backers {
+
+}
+
+.data__days {
+
 }
 
 .data__number{
     font-size: 35px;
     font-weight: 700;
+    margin: .5rem 0;
 }
 
 .data__description{
     color: var(--dark-gray);
+    margin: .5rem 0;
+}
+
+.linhazinha {
+    width: 6rem;
+    color: var(--dark-gray);
+    margin: .5rem 0;
+}
+
+.data__bar{
+    margin: 2rem 0;
+}
+
+.about {
+    border-radius: 10px;
+    margin: 2rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.about__title {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.about__paragraph{
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.about__bamboo, .about__black, .about__mahogany  {
+    padding: 1rem 1rem;
+    border: 1px solid var(--medium-gray);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.about__mahogany {
+    margin-bottom: 0;
+}
+
+.about__bamboo--title, .about__black--title, .about__mahogany--title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.about__bamboo--pledge, .about__black--pledge, .about__mahogany--pledge {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--moderate-cyan);
+    margin-bottom: 1rem;
+}
+
+.about__bamboo--p, .about__black--p, .about__mahogany--p {
+    margin-top: 1rem;
+    color: var(--dark-gray);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.bamboo__left, .black__left, .mahogany__left {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.bamboo__left--number, .black__left--number, .mahogany__left--number {
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+.bamboo__left--p, .black__left--p, .mahogany__left--p {
+    font-size: 15px;
+    color: var(--dark-gray);
+}
+
+.about__bamboo--button, .about__black--button, .about__mahogany--button {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--moderate-cyan);
+    color: var(--white);
+    font-weight: 700;
 }
