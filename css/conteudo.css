@@ -1,0 +1,21 @@
+.conteudo{
+    padding-top: 15rem;
+    background-color: rgb(247, 245, 245);
+}
+
+.data {
+    border-radius: 10px;
+    margin: 0 2rem;
+    background-color: var(--white);
+    text-align: center;
+    padding: 2rem;
+}
+
+.data__number{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.data__description{
+    color: var(--dark-gray);
+}

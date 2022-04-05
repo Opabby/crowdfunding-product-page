@@ -7,6 +7,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cabecalho.css">
+  <link rel="stylesheet" href="./css/conteudo.css">
   
   <title>Frontend Mentor | Crowdfunding product page</title>
 
@@ -21,16 +25,16 @@
     <section class="cabecalho__menu">
       <img class="cabecalho__menu--logo" src="./images/logo.svg">
       <img class="cabecalho__menu--hamburguer" src="./images/icon-hamburger.svg">
-      <ul class="cabecalho__menu--list">
-        <li class="menu__list--item"><a class="menu__link">About</a></li>
-        <hr class="linha">
-        <li class="menu__list--item"><a class="menu__link">Discover</a></li>
-        <hr class="linha">
-        <li class="menu__list--item"><a class="menu__link">Get Started</a></li>
-      </ul>
+      <div class="menu__toggle">
+        <ul class="menu__toggle--list">
+          <li class="menu__list--item"><a class="menu__link">About</a></li>
+          <hr class="linha">
+          <li class="menu__list--item"><a class="menu__link">Discover</a></li>
+          <hr class="linha">
+          <li class="menu__list--item"><a class="menu__link">Get Started</a></li>
+        </ul>
+      </div>
     </section>
-  </header>
-  <main class="conteudo">
     <section class="project">
       <img class="project__logo" src="./images/logo-mastercraft.svg">
       <div class="project__card">
@@ -38,10 +42,13 @@
         <p class="project__card--description">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         <div class="project__card--buttons">
           <button class="card__button--back">Back this project</button>
-          <input class="card__button--book" type="checkbox">
+          <label class="bookmark" for="bookmark"><img src="./images/icon-bookmark.svg"></label>
+          <input class="card__button--book" name="bookmark" id="bookmarl" type="checkbox">
         </div>
       </div>
     </section>
+  </header>
+  <main class="conteudo">
     <section class="data">
       <div class="data__backed">
         <h1 class="data__number">$89,914</h1>
