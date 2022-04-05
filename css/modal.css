@@ -1,3 +1,28 @@
 .modal {
-    display: none;
+    border-radius: 10px;
+    margin: 2rem 2rem;
+    background-color: var(--white);
+    text-align: left;
+    padding: 3rem 1.5rem;
+    line-height: 1.5rem;
+}
+
+.modal__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.modal__p {
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card__no{
+    padding: 1rem 1rem;
+    border: 1px solid var(--medium-gray);
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
