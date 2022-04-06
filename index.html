@@ -22,16 +22,17 @@
   <header class="cabecalho">
     <section class="cabecalho__menu">
       <img class="cabecalho__menu--logo" src="./images/logo.svg">
-      <img class="cabecalho__menu--hamburguer" src="./images/icon-hamburger.svg">
-      <div class="menu__toggle">
+      <nav class="nav-main">
+       
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
         <ul class="menu__toggle--list">
-          <li class="menu__list--item"><a class="menu__link">About</a></li>
+          <li class="menu__list--item"><a class="menu__link" href="#">About</a></li>
           <hr class="linha">
-          <li class="menu__list--item"><a class="menu__link">Discover</a></li>
+          <li class="menu__list--item"><a class="menu__link" href="#">Discover</a></li>
           <hr class="linha">
-          <li class="menu__list--item"><a class="menu__link">Get Started</a></li>
+          <li class="menu__list--item"><a class="menu__link" href="#">Get Started</a></li>
         </ul>
-      </div>
+      </nav>
     </section>
     <section class="project">
       <img class="project__logo" src="./images/logo-mastercraft.svg">
@@ -108,7 +109,10 @@
       </div>
     </section>
     <section class="modal">
-      <h2 class="modal__title">Back this project</h2>
+      <div class="modal__header">
+        <h2 class="modal__title">Back this project</h2>
+        <button class="modal__close"><img src="./images/icon-close-modal.svg"></button>
+      </div>
       <p class="modal__p">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
       <div class="card__no">
         <div class="card__input--label">
@@ -121,19 +125,21 @@
       <div class="card__bamboo">
         <div class="card__input--label">
           <input class="bamboo__stand--radio" type="radio" name="bamboo__stand" id="bamboo__stand">
-          <label class="bamboo__stand--p" for="bamboo__stand">Bamboo Stand</label>
-          <label class="bamboo__stand--label" for="bamboo__stand">Pledge $25 or more</label>
+          <div class="card__label">
+            <label class="bamboo__stand--p" for="bamboo__stand">Bamboo Stand</label>
+            <label class="bamboo__stand--label" for="bamboo__stand">Pledge $25 or more</label>
+          </div>
         </div>
         <p class="card__bamboo--p">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
           you’ll be added to a special Backer member list.</p>
         <div class="bamboo__left"> 
-          <h3 class="bamboo__left--#">101</h3>
+          <h3 class="bamboo__left--n">101</h3>
           <h4 class="bamboo__left--p">left</h4>
         </div>
         <hr class="card__linhazinha"> 
         <p class="bamboo__pledge--p">Enter your pledge</p>
         <form class="bamboo__plegde--inputs">
-          <label for="pledge">$</label>
+          <label for="pledge"></label>
           <input class="bamboo__pledge--number" name="pledge" id="pledge" type="number" min="25">
           <button class="bamboo__pledge--bttn">Continue</button>
         </form> 
@@ -141,17 +147,21 @@
       <div class="card__black">
         <div class="card__input--label">
           <input class="black__stand--radio" type="radio" name="black__stand" id="black__stand">
-          <label class="black__stand--p" for="black__stand">Black Edition Stand</label>
-          <label class="black__stand--label" for="black__stand">Pledge $75 or more</label>
+          <div class="card__label">
+            <label class="black__stand--p" for="black__stand">Black Edition Stand</label>
+            <label class="black__stand--label" for="black__stand">Pledge $75 or more</label>
+          </div>
         </div>
         <p class="card__black--p">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
           member list. Shipping is included.</p>
         <div class="black__left"> 
-          <h3 class="black__left--#">64</h3>
+          <h3 class="black__left--n">64</h3>
           <h4 class="black__left--p">left</h4>
         </div>
+        <hr class="card__linhazinha">
+        <p class="black__pledge--p">Enter your pledge</p> 
         <form class="black__plegde--inputs">
-          <label for="pledge">$</label>
+          <label for="pledge"></label>
           <input class="black__pledge--number" name="pledge" id="pledge" type="number" min="75">
           <button class="black__pledge--bttn">Continue</button>
         </form> 
@@ -159,17 +169,21 @@
       <div class="card__mahogany">
         <div class="card__input--label">
           <input class="mahogany__stand--radio" type="radio" name="mahogany__stand" id="mahogany__stand">
-          <label class="mahogany__stand--p" for="mahogany__stand">Mahogany Special Stand</label>
-          <label class="mahogany__stand--label" for="mahogany__stand">Pledge $200 or more</label>
+          <div class="card__label">
+            <label class="mahogany__stand--p" for="mahogany__stand">Mahogany Special Stand</label>
+            <label class="mahogany__stand--label" for="mahogany__stand">Pledge $200 or more</label>
+          </div>
         </div>
         <p class="card__mahogany--p">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
           to our Backer member list. Shipping is included.</p>
         <div class="mahogany__left"> 
-          <h3 class="mahogany__left--#">0</h3>
+          <h3 class="mahogany__left--n">0</h3>
           <h4 class="mahogany__left--p">left</h4>
         </div>
+        <hr class="card__linhazinha"> 
+        <p class="mahogany__pledge--p">Enter your pledge</p>
         <form class="mahogany__plegde--inputs">
-          <label for="pledge">$</label>
+          <label for="pledge"></label>
           <input class="mahogany__pledge--number" name="pledge" id="pledge" type="number" min="200">
           <button class="mahogany__pledge--bttn">Continue</button>
         </form> 

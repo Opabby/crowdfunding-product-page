@@ -6,7 +6,7 @@
     height: 18rem;
 }
 
-.cabecalho__menu{
+.nav__main{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,13 +14,14 @@
     padding: 1.5rem 0;
 }
 
-.cabecalho__menu--hamburguer{
+.btn-toggle-nav{
     height: 1rem;
     width: 1.2rem;
+    margin-right: 0;
 }
 
-.menu__toggle{
-    display: none;
+.linha{
+    width: 3rem;
 }
 
 .project{
