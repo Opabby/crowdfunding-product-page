@@ -6,22 +6,46 @@
     height: 18rem;
 }
 
-.nav__main{
+.nav-main { 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2rem;
-    padding: 1.5rem 0;
 }
 
-.btn-toggle-nav{
-    height: 1rem;
-    width: 1.2rem;
-    margin-right: 0;
+
+.cabecalho__menu--logo{
+    margin: 1rem 2rem;
+    width: 8rem;
+}
+
+.btn-toggle-nav {
+    margin: 1rem 2rem;
+    transition: 0.6s;
+}
+
+.nav-sidebar{
+    background-color: var(--white);
+    border-radius: 10px;
+    margin: 0 2rem;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.menu__toggle--list {
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.menu__list--item{
+    font-weight: 500;
+    color: var(--black);
+    list-style: none;
 }
 
 .linha{
-    width: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+    color: var(--light-gray);
 }
 
 .project{
