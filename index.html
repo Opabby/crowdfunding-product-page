@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/cabecalho.css">
-  <link rel="stylesheet" href="./css/conteudo.css">
-  <link rel="stylesheet" href="./css/modal.css">
-  <title>Frontend Mentor | Crowdfunding product page</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <script type = "text/javascript" src = "./JS/myscripts.js">
-
-  </script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/conteudo.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Frontend Mentor | Crowdfunding product page</title>
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+    <script type = "text/javascript" src = "./JS/myscripts.js"></script>
+  </head>
+  <body>
     <header class="cabecalho">
       <nav class="nav-main">
         <img class="cabecalho__menu--logo" src="./images/logo.svg">
-        <button class="btn-toggle-nav" onclick="toggleNav()"><img class="btn__toggle--img" src="./images/icon-hamburger.svg"></button>
+        <button class="btn-toggle-nav" onclick="toggleMenu()"><img class="btn__toggle--img" src="./images/icon-hamburger.svg"></button>
       </nav>
       <aside class="nav-sidebar">
         <ul class="menu__toggle--list">
@@ -37,14 +35,13 @@
           <li class="menu__list--item"><a class="menu__link" href="#">Get Started</a></li>
         </ul>
       </aside>
-      
       <section class="project">
         <img class="project__logo" src="./images/logo-mastercraft.svg">
         <div class="project__card">
           <h2 class="project__card--title">Mastercraft Bamboo Monitor Riser</h2>
           <p class="project__card--description">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
           <div class="project__card--buttons">
-            <button class="card__button--back">Back this project</button>
+            <button class="card__button--back" id="myBtn">Back this project</button>
             <label class="bookmark" for="bookmark"><img src="./images/icon-bookmark.svg"></label>
             <input class="card__button--book" name="bookmark" id="bookmarl" type="checkbox">
           </div>
@@ -87,7 +84,7 @@
             <h2 class="bamboo__left--number">101</h2>
             <p class="bamboo__left--p">left</p>
           </div>
-          <button class="about__bamboo--button">Select Reward</button>
+          <button class="about__bamboo--button" id="myBtn">Select Reward</button>
         </div>
         <div class="about__black">
           <h5 class="about__black--title">Black Edition Stand</h5>
@@ -98,7 +95,7 @@
             <h2 class="black__left--number">64</h2>
             <p class="black__left--p">left</p>
           </div>
-          <button class="about__black--button">Select Reward</button>
+          <button class="about__black--button" id="myBtn">Select Reward</button>
         </div>
         <div class="about__mahogany">
           <h5 class="about__mahogany--title">Mahogany Special Edition</h5>
@@ -112,10 +109,10 @@
           <button class="about__mahogany--button">Out of Stock</button>
         </div>
       </section>
-      <section class="modal">
+      <section class="modal" id="myModal">
         <div class="modal__header">
           <h2 class="modal__title">Back this project</h2>
-          <button class="modal__close"><img src="./images/icon-close-modal.svg"></button>
+          <button class="modal__close" id="close"><img src="./images/icon-close-modal.svg"></button>
         </div>
         <p class="modal__p">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
         <div class="card__no">
@@ -202,5 +199,5 @@
       </section>
     </main>  
 
-</body>
+  </body>
 </html>
