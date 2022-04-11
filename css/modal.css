@@ -1,137 +1,121 @@
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-    overflow: auto;
+@media screen and (min-width: 375px){
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        overflow: auto;
 
 
-    border-radius: 10px;
-    margin: 2rem 2rem;
-    background-color: var(--white);
+        border-radius: 10px;
+        margin: 2rem 2rem;
+        background-color: var(--white);
 
-    background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0,0,0,0.4);
 
-    text-align: left;
-    padding: 3rem 1.5rem;
-    line-height: 1.5rem;
-}
+        text-align: left;
+        padding: 3rem 1.5rem;
+        line-height: 1.5rem;
+    }
+    .modal__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .modal__title {
+        font-size: 20px;
+        font-weight: 700;
 
-.modal__header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-.modal__title {
-    font-size: 20px;
-    font-weight: 700;
-
-}
-
-.modal__close{
-    border: none;
-    margin: 0 0;
-    background-color: var(--white);
-}
-
-.modal__p {
-    color: var(--dark-gray);
-    margin-bottom: 2rem;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.card__no, .card__bamboo, .card__black, .card__mahogany{
-    
-    border: 1px solid var(--medium-gray);
-    border-radius: 10px;
-    margin-bottom: 2rem;
-}
-
-.card__input--label {
-    margin: 1rem 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.bamboo__stand--radio, .black__stand--radio, .no__reward--radio, .mahogany__stand--radio {
-    margin-right: 1rem;
-}
-
-.card__label {
-    display: flex;
-    flex-direction: column;
-}
-
-.no__reward--p, .bamboo__stand--p, .black__stand--p, .mahogany__stand--p {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--black);
-}
-
-.bamboo__stand--label, .black__stand--label, .mahogany__stand--label{
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--moderate-cyan);
-}
-
-.card__bamboo--p, .card__black--p, .card__mahogany--p, .card__no--p {
-    margin: 1rem 1rem;
-    color: var(--dark-gray);
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.bamboo__left, .black__left, .mahogany__left {
-    display: flex;
-    align-items: center;
-    margin: 1rem 1rem;
-}
-
-.bamboo__left--n, .black__left--n, .mahogany__left--n {
-    margin-right: .5rem;
-}
-
-.card__linhazinha {
-    border: 1px solid var(--medium-gray);
-    width: 100%;
-}
-
-.bamboo__pledge--p , .black__pledge--p, .mahogany__pledge--p {
-    margin: 1rem 1rem;
-    text-align: center;
-    color: var(--dark-gray);
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.bamboo__plegde--inputs, .black__plegde--inputs, .mahogany__plegde--inputs {
-    margin: 1rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.bamboo__pledge--number, .black__pledge--number, .mahogany__pledge--number{
-    width: 6rem;
-    height: 3rem;
-    border-radius: 50px;
-    border: 1px solid var(--medium-gray);
-    background: transparent;
-}
-
-.bamboo__pledge--bttn, .mahogany__pledge--bttn, .black__pledge--bttn{
-    width: 6rem;
-    height: 3rem;
-    margin-right: .5rem;
-    border-radius: 50px;
-    border: none;
-    background: var(--moderate-cyan);
-    color: var(--white);
-    font-weight: 500;
+    }
+    .modal__close{
+        border: none;
+        margin: 0 0;
+        background-color: var(--white);
+    }
+    .modal__p {
+        color: var(--dark-gray);
+        margin-bottom: 2rem;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .card__no, .card__bamboo, .card__black, .card__mahogany{
+        
+        border: 1px solid var(--medium-gray);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    .card__input--label {
+        margin: 1rem 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .bamboo__stand--radio, .black__stand--radio, .no__reward--radio, .mahogany__stand--radio {
+        margin-right: 1rem;
+    }
+    .card__label {
+        display: flex;
+        flex-direction: column;
+    }
+    .no__reward--p, .bamboo__stand--p, .black__stand--p, .mahogany__stand--p {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--black);
+    }
+    .bamboo__stand--label, .black__stand--label, .mahogany__stand--label{
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--moderate-cyan);
+    }
+    .card__bamboo--p, .card__black--p, .card__mahogany--p, .card__no--p {
+        margin: 1rem 1rem;
+        color: var(--dark-gray);
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .bamboo__left, .black__left, .mahogany__left {
+        display: flex;
+        align-items: center;
+        margin: 1rem 1rem;
+    }
+    .bamboo__left--n, .black__left--n, .mahogany__left--n {
+        margin-right: .5rem;
+    }
+    .card__linhazinha {
+        border: 1px solid var(--medium-gray);
+        width: 100%;
+    }
+    .bamboo__pledge--p , .black__pledge--p, .mahogany__pledge--p {
+        margin: 1rem 1rem;
+        text-align: center;
+        color: var(--dark-gray);
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .bamboo__plegde--inputs, .black__plegde--inputs, .mahogany__plegde--inputs {
+        margin: 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bamboo__pledge--number, .black__pledge--number, .mahogany__pledge--number{
+        width: 6rem;
+        height: 3rem;
+        border-radius: 50px;
+        border: 1px solid var(--medium-gray);
+        background: transparent;
+    }
+    .bamboo__pledge--bttn, .mahogany__pledge--bttn, .black__pledge--bttn{
+        width: 6rem;
+        height: 3rem;
+        margin-right: .5rem;
+        border-radius: 50px;
+        border: none;
+        background: var(--moderate-cyan);
+        color: var(--white);
+        font-weight: 500;
+    }
 }
