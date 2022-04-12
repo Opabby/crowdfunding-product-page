@@ -95,6 +95,9 @@
         color: var(--white);
         font-size: 14px;
     }
+    .bookmark{
+        display: none;
+    } 
     .card__button--book{
         display: none;
     }
@@ -137,9 +140,6 @@
      .linha{
          display: none;
      }
-     .project{
-
-     }
      .project__logo{
         margin-top: 14rem;
      }
@@ -156,9 +156,12 @@
         margin-bottom: 1rem;
     }
 
-     
      .project__card--buttons{
          margin: 0;
          margin-top: 2rem;
      }
+
+    .bookmark {
+        display: fixed;
+    }
  }
