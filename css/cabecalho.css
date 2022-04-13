@@ -163,5 +163,6 @@
 
     .bookmark {
         display: fixed;
+        align-items: center;
     }
  }
